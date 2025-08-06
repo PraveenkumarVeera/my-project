@@ -1,30 +1,22 @@
 import React from "react";
-// import { BrowserRouter, Route, Routes } from "react-router-dom";
-// import Home from "./Components/Home";
-// import Setting from './Components/Setting'
-import Cart from "./Components/Cart";
-// const LazySetting = React.lazy(() => import("./Components/Setting"));
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import SignIn from "./Components/SignIn";
+import Home from "./Components/Home";
+import AwsS3 from "./Components/AwsS3";
+import Dynamodb from "./Components/Dynamodb";
 
 function App() {
+  
   return (
-    // <BrowserRouter>
-    //   <Routes>
-    //     <Route path="/" element={<Home />} />
-    //     <Route
-    //       path="setting"
-    //       element={
-    //         <React.Suspense fallback={<div>Loading...</div>}>
-    //           <LazySetting />
-    //         </React.Suspense>
-    //       }
-    //     />
-
-    //     {/* <Route path='setting' element={<Setting />} /> */}
-
-    //     <Route path="cart" element={<Cart />} />
-    //   </Routes>
-    // </BrowserRouter>
-    <Cart/>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<SignIn />} />
+        <Route path="/home" element={<Home />} />
+        <Route path="/dynamo" element={<Dynamodb />} />
+        <Route path="/s3" element={<AwsS3 />} />
+      </Routes>
+    </BrowserRouter>
   );
+
 }
 export default App;
