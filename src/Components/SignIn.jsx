@@ -9,7 +9,7 @@ function SignIn() {
 
   const signOutRedirect = () => {
     const clientId = "2o7nam0a63j524hbhejqss1ke";
-    const logoutUri = "http://localhost:3000";
+    const logoutUri = "https://4b30dea70d05.ngrok-free.app";
     const cognitoDomain = "https://eu-north-1saxamizdb.auth.eu-north-1.amazoncognito.com";
     window.location.href = `${cognitoDomain}/logout?client_id=${clientId}&logout_uri=${encodeURIComponent(logoutUri)}`;
   };

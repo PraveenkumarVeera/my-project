@@ -10,7 +10,7 @@ import { AuthProvider } from "react-oidc-context";
 const cognitoAuthConfig = {
   authority: "https://cognito-idp.eu-north-1.amazonaws.com/eu-north-1_SAxAmizDb",
   client_id: "2o7nam0a63j524hbhejqss1ke",
-  redirect_uri: "http://localhost:3000",
+  redirect_uri: "https://4b30dea70d05.ngrok-free.app",
   response_type: "code",
   scope: "phone openid email",
 };
